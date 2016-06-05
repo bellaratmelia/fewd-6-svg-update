@@ -87,7 +87,12 @@ header {
 }
 
     a:hover .nav-svg-path {
-        fill: #111;
+        fill: rgba(17, 17, 17, 1);
+    }
+
+    /* Fix for Safari */
+    a:hover + .nav-svg-path {
+        fill: rgba(17, 17, 17, 1);
     }
 
 
