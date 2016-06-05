@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    color: #111;
+    background: url('svgs/background.svg') #edeff0;
+    background-size: 50px;
+}
+
+#container {
+    max-width: 960px;
+    background: #fff;
+    margin: 0 auto;
+}
+
+p {
+    max-width: 350px;
+    margin: 35px auto 0;
+    line-height: 2em;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: #39add1;
+    font-weight: 700;
+}
+
+    a:hover {
+        color: #111;
+    }
+
+/* TRANSITIONS */
+a,
+.nav-svg-path,
+.corgi-red,
+.corgi-fawn,
+.corgi-sable,
+.corgi-black-tan {
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+}
+
+/* ---------- HEADER STUFF ---------- */
+
+header {
+    padding-top: 10px;
+}
+
+    header nav {
+        padding-bottom: 50px;
+        text-align: left;
+    }
+
+        header nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+    header h1 {
+        line-height: 1em;
+    }
+
+#logo-text {
+    display: none;
+}
+
+
+/* ---------- NAVs SVGs ---------- */
+
+#nav-home,
+#nav-contact {
+    width: 14px;
+    height: 12px;
+}
+
+#nav-location {
+    width: 14px;
+    height: 14px;
+}
+
+.nav-svg-path {
+    fill: #39add1;
+}
+
+    a:hover .nav-svg-path {
+        fill: #111;
+    }
+
+
+/* ---------- LOGO SVG ---------- */
+
+#logo {
+    width: 140px;
+    height: 120px;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+}
+
+#logo:hover {
+    transform: scale(1.2);
+    transform-origin: 70.4px 69.9px;
+
+    -webkit-transform: scale(1.2);
+    -webkit-transform-origin: 70.4px 69.9px;
+}
+
+    #logo .logo-title {
+        fill: #EAAA7F;
+    }
+
+    #logo .logo-outer {
+        fill: #BA8058;
+    }
+
+    #logo .logo-paws {
+        fill: #F4C6A6;
+    }
+
+
+/* ---------- MAIN STUFF ---------- */
+
+main {
+    padding-top: 50px;
+}
+
+    main h2 {
+        font-size: 28px;
+    }
+
+    main ul {
+        padding: 0;
+    }
+
+    main li {
+        display: inline-block;
+        color: #ba8058;
+        margin-right: 20px;
+    }
+
+        main li img {
+            margin-bottom: 15px;
+        }
+
+        main li span {
+            margin-left: -40px;
+        }
+
+        main li:last-child {
+            margin-right: 0;
+        }
+
+
+/* ---------- CORGIS STUFF ---------- */
+
+.corgi-red,
+.corgi-fawn,
+.corgi-sable,
+.corgi-black-tan {
+    width: 170px;
+    height: 170px;
+}
+
+.corgi-red:hover,
+.corgi-fawn:hover,
+.corgi-sable:hover,
+.corgi-black-tan:hover {
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+}
+
+.corgi-mouth-path {
+    fill: #fff;
+}
+
+.corgi-eye-nose-path {
+    fill: #2D3339;
+}
+
+
+/* RED CORGI */
+
+.corgi-red .corgi-ear-path,
+.corgi-red .corgi-coat-path {
+    fill:#BA8058;
+}
+
+.corgi-red .corgi-eyebrow-path {
+    fill:#EAAA7F;
+}
+
+/* FAWN CORGI */
+
+.corgi-fawn .corgi-ear-path,
+.corgi-fawn .corgi-coat-path {
+    fill: #EAAA7F;
+}
+
+.corgi-fawn .corgi-eyebrow-path {
+    fill: #F4C6A6;
+}
+
+/* SABLE CORGI */
+
+.corgi-sable .corgi-ear-path,
+.corgi-sable .corgi-coat-path {
+    fill: #844B24;
+}
+
+.corgi-sable .corgi-eyebrow-path {
+    fill: #BA8058;
+}
+
+/* BLACK AND TAN CORGI */
+
+.corgi-black-tan .corgi-ear-path,
+.corgi-black-tan .corgi-eyebrow-path {
+    fill: #BA8058;
+}
+
+.corgi-black-tan .corgi-coat-path {
+    fill: #52595F;
+}
+
+
+/* ---------- FOOTER STUFF ---------- */
+
+footer {
+    width: 100%;
+    margin-top: 100px;
+    padding-bottom: 30px;
+    color: #ba8058;
+}
+
+
+/* ---------- MEDIA QUERY ---------- */
+
+@media screen and (max-width: 420px) {
+
+    .container {
+        padding: 10px;
+    }
+
+    header nav ul li {
+        margin-right: 15px;
+    }
+
+    #logo-text {
+        display: block;
+    }
+
+    #logo {
+        margin-bottom: 20px;
+    }
+
+    #logo .logo-title {
+        fill: #fff;
+    }
+}
+
